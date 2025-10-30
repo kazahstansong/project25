@@ -118,6 +118,9 @@ st.markdown("""
     background-color: rgba(255, 255, 255, 1) !important;
     opacity: 1 !important;
 }
+html, body, [class*="css"]  {
+    font-size: 11px;   /* 기본값 약 16px → 14px로 축소 */
+}
 </style>
 """, unsafe_allow_html=True)
 

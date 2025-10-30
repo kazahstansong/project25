@@ -1,4 +1,5 @@
-# 🚨 AI 기반 장애 대응 상황창 어시스턴트
+# [🚨 AI 기반 장애 대응 상황창 어시스턴트](https://pro-ssong-webapp-ede8apezc0gac6gg.canadacentral-01.azurewebsites.net/)
+
 
 > **실시간 대화 요약 + 중간보고 자동 생성으로 장애 대응 효율을 극대화하는 AI 어시스턴트**
 
