@@ -173,8 +173,8 @@ try:
     # 4️⃣ 프롬프트 정의 (템플릿 + 문서 기반)
     prompt = ChatPromptTemplate.from_template("""
     너는 시스템 장애 대응을 지원하는 어시스턴트야.
-    아래 매뉴얼과 템플릿을 참고해 상황창 대화를 중간보고 형식으로 정리해줘.
-
+    아래 매뉴얼과 템플릿을 참고해 상황창 대화를 중간보고/최종보고 형식으로 정리해줘.
+                                              
     [현재 보고유형]
     {report_type}
                                               
@@ -240,7 +240,7 @@ if st.session_state.active_tab == "tab1":
         st.session_state["messages"].append({"role": "user", "content": user_input})
 
         # 보고서 유형 판단
-        report_type = "최종보고" if ("복구 완료" in user_input or "정상화" in user_input or "이상 없음 보고" in user_input) else "중간보고"
+        report_type = "최종보고" if ("복구 완료" in user_input or "전체 완료" in user_input or "이상 없음 보고" in user_input) else "중간보고"
 
         # 대화 이력 포함
         chat_history = "\n".join([f"{m['role']}: {m['content']}" for m in st.session_state["messages"]])
