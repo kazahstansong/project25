@@ -1,0 +1,61 @@
+{
+  "name": "incident-manual-index4",
+  "fields": [
+    {
+      "name": "id",
+      "type": "Edm.String",
+      "key": true,
+      "filterable": false,
+      "sortable": false,
+      "facetable": false,
+      "searchable": false
+    },
+    {
+      "name": "category",
+      "type": "Edm.String",
+      "searchable": true,
+      "retrievable": true,
+      "filterable": true,
+      "sortable": false,
+      "facetable": true,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "content",
+      "type": "Edm.String",
+      "searchable": true,
+      "retrievable": true,
+      "filterable": false,
+      "sortable": false,
+      "facetable": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "content_vector",
+      "type": "Collection(Edm.Single)",
+      "searchable": true,
+      "retrievable": true,
+      "dimensions": 1536,
+      "vectorSearchProfile": "vector-profile"
+    }
+  ],
+  "vectorSearch": {
+    "profiles": [
+      {
+        "name": "vector-profile",
+        "algorithm": "vector-algorithm"
+      }
+    ],
+    "algorithms": [
+      {
+        "name": "vector-algorithm",
+        "kind": "hnsw",
+        "hnswParameters": {
+          "m": 4,
+          "efConstruction": 400,
+          "metric": "cosine"
+        }
+      }
+    ]
+  }
+}

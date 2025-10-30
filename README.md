@@ -89,8 +89,7 @@ AI 기반 장애 대응 상황창 어시스턴트는 **시스템 장애 발생 �
 ### 🔹 Step 2. VS Code 개발 환경 세팅
 - Python 3.10+ 환경 구축  
 - 필수 라이브러리 설치
-  ```bash
-  pip install langchain langchain-community streamlit openai azure-search-documents
+
 ### 🔹 Step 3. 장애 매뉴얼 문서 벡터 인덱싱
 - 장애 매뉴얼 문서(JSON) 업로드
 - Azure AI Search에 인덱스 생성
