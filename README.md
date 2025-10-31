@@ -40,14 +40,14 @@ AI 기반 장애 대응 상황창 어시스턴트는 **시스템 장애 발생 �
 ## 📘 프로젝트 시연
 - 상황창 : “상황창 메시지 요약 + 보고문 자동 생성”
 <p align="center">
-  <img src="./img/demo1.PNG" width="45%" />
-  <img src="./img/demo2.PNG" width="45%" />
+  <img src="./img/demo11.PNG" width="45%" />
+  <img src="./img/demo12.PNG" width="45%" />
 </p>
 
 - 상황창 : “보고서 내역 조회 및 최신 보고서 확인 가능”
 <p align="center">
-  <img src="./img/demo3.PNG" width="45%" />
-  <img src="./img/demo4.PNG" width="45%" />
+  <img src="./img/demo13.PNG" width="45%" />
+  <img src="./img/demo14.PNG" width="45%" />
 </p
 
 ---
